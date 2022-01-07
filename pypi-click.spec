@@ -20,7 +20,7 @@ BuildRequires : buildreq-distutils3
 Provides: click
 Provides: click-python
 Provides: click-python3
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py-python
 BuildRequires : pypi(click)
 BuildRequires : pypi(colorama)
@@ -28,7 +28,7 @@ BuildRequires : pypi(importlib_metadata)
 BuildRequires : pypi(pillow)
 BuildRequires : pytest
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 Click Examples
