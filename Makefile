@@ -1,5 +1,5 @@
 PKG_NAME := pypi-click
-URL = https://files.pythonhosted.org/packages/dd/cf/706c1ad49ab26abed0b77a2f867984c1341ed7387b8030a6aa914e2942a0/click-8.0.4.tar.gz
+URL = https://files.pythonhosted.org/packages/45/2b/7ebad1e59a99207d417c0784f7fb67893465eef84b5b47c788324f1b4095/click-8.1.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
