@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x7A1C87E3F5BC42A8 (davidism@gmail.com)
 #
 Name     : pypi-click
-Version  : 8.1.1
-Release  : 43
-URL      : https://files.pythonhosted.org/packages/ba/1c/9490d7fd88dd612f2f6ced0fac0560f160d434f28bf3f2fe4173d6b79cae/click-8.1.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/ba/1c/9490d7fd88dd612f2f6ced0fac0560f160d434f28bf3f2fe4173d6b79cae/click-8.1.1.tar.gz
-Source1  : https://files.pythonhosted.org/packages/ba/1c/9490d7fd88dd612f2f6ced0fac0560f160d434f28bf3f2fe4173d6b79cae/click-8.1.1.tar.gz.asc
+Version  : 8.1.2
+Release  : 44
+URL      : https://files.pythonhosted.org/packages/42/e1/4cb2d3a2416bcd871ac93f12b5616f7755a6800bccae05e5a99d3673eb69/click-8.1.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/42/e1/4cb2d3a2416bcd871ac93f12b5616f7755a6800bccae05e5a99d3673eb69/click-8.1.2.tar.gz
+Source1  : https://files.pythonhosted.org/packages/42/e1/4cb2d3a2416bcd871ac93f12b5616f7755a6800bccae05e5a99d3673eb69/click-8.1.2.tar.gz.asc
 Summary  : Composable command line interface toolkit
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -63,15 +63,15 @@ python3 components for the pypi-click package.
 
 
 %prep
-%setup -q -n click-8.1.1
-cd %{_builddir}/click-8.1.1
+%setup -q -n click-8.1.2
+cd %{_builddir}/click-8.1.2
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1648737920
+export SOURCE_DATE_EPOCH=1648824797
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -84,7 +84,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-click
-cp %{_builddir}/click-8.1.1/LICENSE.rst %{buildroot}/usr/share/package-licenses/pypi-click/6fb11e02ffe0f79b74f1c6034b4ae6e7717a69f8
+cp %{_builddir}/click-8.1.2/LICENSE.rst %{buildroot}/usr/share/package-licenses/pypi-click/6fb11e02ffe0f79b74f1c6034b4ae6e7717a69f8
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
