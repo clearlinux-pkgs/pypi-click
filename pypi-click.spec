@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-click
-Version  : 8.1.4
-Release  : 57
-URL      : https://files.pythonhosted.org/packages/77/88/b0cc5fe95c31c301e9823ea9b028f669c0dcfa205ff71111037a5ed4892c/click-8.1.4.tar.gz
-Source0  : https://files.pythonhosted.org/packages/77/88/b0cc5fe95c31c301e9823ea9b028f669c0dcfa205ff71111037a5ed4892c/click-8.1.4.tar.gz
+Version  : 8.1.5
+Release  : 58
+URL      : https://files.pythonhosted.org/packages/7e/ad/7a6a96fab480fb2fbf52f782b2deb3abe1d2c81eca3ef68a575b5a6a4f2e/click-8.1.5.tar.gz
+Source0  : https://files.pythonhosted.org/packages/7e/ad/7a6a96fab480fb2fbf52f782b2deb3abe1d2c81eca3ef68a575b5a6a4f2e/click-8.1.5.tar.gz
 Summary  : Composable command line interface toolkit
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -60,10 +60,10 @@ python3 components for the pypi-click package.
 
 
 %prep
-%setup -q -n click-8.1.4
-cd %{_builddir}/click-8.1.4
+%setup -q -n click-8.1.5
+cd %{_builddir}/click-8.1.5
 pushd ..
-cp -a click-8.1.4 buildavx2
+cp -a click-8.1.5 buildavx2
 popd
 
 %build
@@ -71,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1688678963
+export SOURCE_DATE_EPOCH=1689349127
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
