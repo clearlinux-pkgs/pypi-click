@@ -7,7 +7,7 @@
 #
 Name     : pypi-click
 Version  : 8.1.8
-Release  : 64
+Release  : 65
 URL      : https://files.pythonhosted.org/packages/b9/2e/0090cbf739cee7d23781ad4b89a9894a41538e4fcf4c31dcdd705b78eb8b/click-8.1.8.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b9/2e/0090cbf739cee7d23781ad4b89a9894a41538e4fcf4c31dcdd705b78eb8b/click-8.1.8.tar.gz
 Summary  : Composable command line interface toolkit
